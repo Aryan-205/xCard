@@ -104,8 +104,8 @@ export default function App() {
 
   return (
     <>
-    <div className="min-h-screen bg-gradient-to-b from-slate-200 to-white p-10 font-sans">
-      <p className='font-bold font-sans text-xl'>Your own X Card <span className='text-sm text-gray-500'>by Aryan Bola</span></p>
+    <div className="bg-gradient-to-b from-slate-200 to-white p-10 font-sans">
+      <p className='font-bold font-sans text-xl'>Your own X Card </p>
       <div className="flex flex-col md:flex-row gap-10">
         <div className="flex-1 space-y-4">
           <input name="tagline" value={form.tagline} onChange={handleChange} placeholder="Tagline" className="w-full border p-2" />
@@ -120,7 +120,7 @@ export default function App() {
 
         <div id="card" className="w-[300px] h-[500px] relative bg-cover bg-center rounded shadow-lg" style={{ backgroundImage: `url('/card.jpeg')` }}>
           <img src="/xLogo.png" alt="#" className="absolute top-[160px] left-[77px] w-10"/>
-          <div className="absolute top-[220px] left-[77px] text-slate-300 text-sm font-semibold uppercase tracking-widest w-18">{form.tagline}</div>
+          <div className="absolute top-[216px] left-[77px] text-slate-300 text-sm font-semibold uppercase w-18">{form.tagline}</div>
           <div className="absolute top-[252px] left-[77px] text-slate-300 text-[8px] font-semibold">Followers:</div>
           <div className="absolute top-[264px] left-[77px] text-slate-300 text-[6px]">{form.followers}</div>
           <div className="absolute top-[252px] right-[110px] text-slate-300 text-[8px] font-semibold">Joined:</div>
@@ -134,6 +134,11 @@ export default function App() {
         </div>
       </div>
     </div>
+    <div className='p-4 md:flex justify-around'>
+        <p className='text-sm text-gray-500'>By Aryan Bola ❤️ (<a href="https://x.com/BolaJi_69" className='hover:underline'>@BolaJi_69</a>)</p>
+        <p className='text-sm text-gray-500'>Plzz drop a follow if you like it</p>
+        <p className='text-xs text-gray-500'>Credit to (<a href="https://x.com/itsss_chidu" className='hover:underline'>@itsss_chidu</a>) for design Inspiration</p>
+      </div>
   </>
   )
 }
