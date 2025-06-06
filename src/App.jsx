@@ -123,8 +123,8 @@ export default function App() {
           <div className="absolute top-[216px] left-[77px] text-slate-300 text-sm font-semibold uppercase w-18">{form.tagline}</div>
           <div className="absolute top-[252px] left-[77px] text-slate-300 text-[8px] font-semibold">Followers:</div>
           <div className="absolute top-[264px] left-[77px] text-slate-300 text-[6px]">{form.followers}</div>
-          <div className="absolute top-[252px] right-[110px] text-slate-300 text-[8px] font-semibold">Joined:</div>
-          <div className="absolute top-[264px] right-[91px] text-slate-300 text-[6px]">{form.joined}</div>
+          <div className="absolute top-[252px] left-[170px] text-slate-300 text-[8px] font-semibold">Joined:</div>
+          <div className="absolute top-[264px] left-[170px] text-slate-300 text-[6px]">{form.joined}</div>
           <div className="absolute bottom-[196px] left-[77px] text-slate-300 text-[6px]">{form.username}</div>
           <div className="absolute bottom-[172px] left-[77px] text-slate-300 font-semibold text-[18px] w-36">{form.name}</div>
           <div className="absolute top-[344px] left-[77px] text-slate-300 text-[8px] font-semibold w-16">About</div>
